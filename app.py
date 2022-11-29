@@ -11,6 +11,7 @@ def hello_world():  # put application's code here
 @app.route('/greet')
 @app.route('/greet/<name>')
 def greet(name=""):
+    """Greet input name."""
     return f"Hello {name}"
 
 
