@@ -16,9 +16,9 @@ def greet(name=""):
 
 @app.route('/f/<celsius>')
 def convert_celsius_to_fahrenheit(celsius):
-    """convert temperature from celsius to fahrenheit"""
+    """Convert temperature from celsius to fahrenheit."""
     fahrenheit = float(celsius) * 9.0 / 5 + 32
-    return f"{fahrenheit}"
+    return f"Temperature of {celsius} C is equivalent to {fahrenheit} F."
 
 
 if __name__ == '__main__':
