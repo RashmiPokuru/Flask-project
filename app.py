@@ -9,8 +9,9 @@ def hello_world():  # put application's code here
 
 
 @app.route('/greet')
-def greet():
-    return "Hello"
+@app.route('/greet/<name>')
+def greet(name=""):
+    return f"Hello {name}"
 
 
 if __name__ == '__main__':
